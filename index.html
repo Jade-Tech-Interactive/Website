@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jade-Tech</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css">
+
+    <link rel="stylesheet" href="css/slick.css" />
+
+    <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    </a>
+    
+    <!--
+
+Tooplate 2127 Little Fashion
+
+https://www.tooplate.com/view/2127-little-fashion
+
+-->
+    <style>
+        
+        .featured-product {
+            background-image: url("images/characters/_23d8cd40-776f-4f8a-8bbe-d25e4df1122a.jpg");
+            background-size: cover;
+            /* Adjust this according to your preference */
+            background-position: center;
+            /* Adjust this according to your preference */
+            /* You can add more background properties here as needed */
+        }
+
+        .about {
+            background-image: url("images/characters/_bc2c8c2b-bc35-463e-97b3-0aa9965e631b.jpg");
+            
+            background-size: cover;
+            /* Adjust this according to your preference */
+            background-position: center;
+            /* Adjust this according to your preference */
+            /* You can add more background properties here as needed */
+        }
+
+        .about h2,
+        .about h4,
+        .about p,
+        .about a {
+            color: white;
+            /* Change text color to white */
+        }
+
+
+        .text-container {
+            background-color: rgba(9, 50, 73, 0.774);
+            /* Semi-transparent white background */
+            padding: 20px;
+            /* Adjust padding as needed */
+        }
+
+        .text-container2 {
+            background-color: rgba(68, 134, 173, 0.767);
+            /* Semi-transparent white background */
+            /* Adjust padding as needed */
+        }
+    </style>
+</head>
+
+<body>
+    
+    <section class="preloader">
+        <div class="spinner">
+            <span class="sk-inner-circle"></span>
+        </div>
+    </section>
+    
+
+    <div class="fixed flex gap-x-4 flex-row top-10 transition-all z-[10000] right-0 w-80 social-links" id="share-nav">
+        <!-- <button type="button"
+            class="h-12 w-12 flex shrink-0 items-center justify-center hover:bg-gray-600 bg-gray-800 text-white">
+            <div class="share-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-share">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M8.7 10.7l6.6 -3.4" />
+                    <path d="M8.7 13.3l6.6 3.4" />
+                </svg>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+            </svg>
+        </button> -->
+        <ul class="flex flex-col w-full h-auto rounded-lg bg-white shadow-lg text-black">
+            <li class="flex flex-row w-full gap-x-4 py-2 px-3 hover:bg-white hover:bg-opacity-20">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                    </svg>
+                    Twitter
+                </a>
+            </li>
+            <li class="flex flex-row w-full gap-x-4 py-2 px-3 hover:bg-white hover:bg-opacity-20">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://jade-tech.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                    Facebook
+                </a>
+            </li>
+            <li class="flex flex-row w-full gap-x-4 py-2 px-3 hover:bg-white hover:bg-opacity-20">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M16.5 7.5l0 .01" />
+                    </svg> Instagram
+                </a>
+            </li>
+            <li class="flex flex-row w-full gap-x-4 py-2 px-3 hover:bg-white hover:bg-opacity-20">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" />
+                    </svg> Tiktok
+                </a>
+            </li>
+            <li class="flex flex-row w-full gap-x-4 py-2 px-3 hover:bg-white hover:bg-opacity-20">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                        <path d="M8 11l0 5" />
+                        <path d="M8 8l0 .01" />
+                        <path d="M12 16l0 -5" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                    </svg> LinkedIn
+                </a>
+            </li>
+            <li class="flex flex-row w-full gap-x-4 py-2 px-3 hover:bg-white hover:bg-opacity-20">
+                <a href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg> GitHub
+                </a>
+            </li>
+            <li class="flex flex-row w-full gap-x-4 py-2 px-3 hover:bg-white hover:bg-opacity-20">
+                <a href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-steam"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16.5 5a4.5 4.5 0 1 1 -.653 8.953l-4.347 3.009l0 .038a3 3 0 0 1 -2.824 3l-.176 0a3 3 0 0 1 -2.94 -2.402l-2.56 -1.098v-3.5l3.51 1.755a2.989 2.989 0 0 1 2.834 -.635l2.727 -3.818a4.5 4.5 0 0 1 4.429 -5.302z" /><circle cx="16.5" cy="9.5" r="1" fill="currentColor" /></svg> Steam
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="/images/jade-tech.png" alt="" height="56" width="auto">
+                </a>
+
+                <div class="d-lg-none">
+                    <a href="index.html" class="bi-person custom-icon me-3"></a>
+
+                    <a href="index.html" class="bi-bag custom-icon"></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">characters</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Jobs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <section class="slick-slideshow" id="large-header">
+            <canvas id="demo-canvas"></canvas>
+            <div class="col-lg-6 col-10 hero-content">
+                <h1 class="slick-title">Jade-Tech Interactive</h1>
+                <div class="text-container2">
+
+                <p class="lead text-white mt-lg-3 mb-lg-5">Game Art And Design Studio</p>
+                    
+                </div>
+                <a href="#about" class="btn custom-btn">Learn More</a>
+            </div>
+            <a href="#about" class="scroll-more"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7l5 5l5 -5" /><path d="M7 13l5 5l5 -5" /></svg></a>
+        </section>
+
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 text-center mb-5">
+                        <img src="/images/jade-tech.png" alt="Jade Tech logo" style="height: 192px; width: auto;">
+                    </div>
+
+                    <div class="col-lg-2 col-12 mt-auto mb-auto">
+                        <ul class="nav nav-pills mb-5 mx-auto justify-content-center align-items-center"
+                            id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">
+                                    <img src="images/characters/_148bf40e-f6f3-43bb-a321-30ada3bfbe88.jpg" alt="" class="img-fluid">
+                                </button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-youtube-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-youtube" type="button" role="tab"
+                                    aria-controls="pills-youtube" aria-selected="true">
+                                    <img src="images/characters/_4d9b420f-786e-4ec5-93a6-62b9c4cd9e3a.jpg" alt=""
+                                        class="img-fluid">
+                                </button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-skill-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-skill" type="button" role="tab"
+                                    aria-controls="pills-skill" aria-selected="false">
+                                    <img src="images/characters/_a2ea0d7e-a73b-4b66-8ebf-18168cdd8aec.jpg"
+                                        class="img-fluid" alt="">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-10 col-12">
+                        <div class="tab-content mt-2" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7 col-12">
+                                        <img src="images/characters/_148bf40e-f6f3-43bb-a321-30ada3bfbe88.jpg"
+                                            class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-lg-5 col-12">
+                                        <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5">
+                                            <div class="text-container">
+                                                <h4 class="mb-3">Whats it all about? </h4>
+
+                                                <p>The Jadetech 3D Card Game revolutionizes the genre by introducing stunning 3D graphics.</p>
+
+                                                <p>Witness your favorite cards come to life on the battlefield, adding a whole new layer of immersion to your card game experience.</p>
+
+                                                <div class="mt-2 mt-lg-auto">
+                                                    <a href=index.html" class="custom-link mb-2">
+                                                        Learn more about us
+                                                        <i class="bi-arrow-right ms-2"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-youtube" role="tabpanel"
+                                aria-labelledby="pills-youtube-tab">
+
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7 col-12">
+                                        <img src="images/characters/_4d9b420f-786e-4ec5-93a6-62b9c4cd9e3a.jpg" alt=""
+                                            class="img-fluid">
+                                    </div>
+
+                                    <div class="col-lg-5 col-12">
+                                        <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5">
+                                            <div class="text-container">
+                                            <h4 class="mb-3">Classic Mechanics, Modern Presentation</h4>
+
+                                            <p>The Jadetech 3D Card Game blends the strategic depth of traditional card games with a cutting-edge 3D presentation. </p>
+
+                                            <p>Collect cards, build your deck, and outwit your opponents in a familiar yet visually spectacular way.</p>
+
+                                            <div class="mt-2 mt-lg-auto">
+                                                <a href="index.html" class="custom-link mb-2">
+                                                    Work with us
+                                                    <i class="bi-arrow-right ms-2"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-skill" role="tabpanel"
+                                aria-labelledby="pills-skill-tab">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7 col-12">
+                                        <img src="images/characters/_a2ea0d7e-a73b-4b66-8ebf-18168cdd8aec.jpg"
+                                            class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-lg-5 col-12">
+                                        <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5">
+                                            <div class="text-container">
+                                            <h4 class="mb-3">Epic Adventures</h4>
+
+                                            <p>The Jadetech 3D Card Game isn't just about battles. Embark on an epic journey through a captivating world, encountering unforgettable characters and challenges along the way. Collect cards, uncover secrets, and become a legend.</p>
+                           
+                                            <div class="skill-thumb mt-3">
+
+                                                <strong style="color: white;">Story</strong>  <span class="float-end" style="color: white;">50%</span>
+                                                <div class="progress">
+                                                  <div class="progress-bar progress-bar-primary" role="progressbar"
+                                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width: 90%;"></div>
+                                                </div>
+                                              
+                                                <strong style="color: white;">GamePlay</strong>  <span class="float-end" style="color: white;">50%</span>
+                                                <div class="progress">
+                                                  <div class="progress-bar progress-bar-primary" role="progressbar"
+                                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width: 70%;"></div>
+                                                </div>
+                                              
+                                                <strong style="color: white;">Fun</strong>  <span class="float-end" style="color: white;">100%</span>
+                                                <div class="progress">
+                                                  <div class="progress-bar progress-bar-primary" role="progressbar"
+                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width: 80%;"></div>
+                                                </div>
+                                              
+                                              </div>
+                                              
+
+                                            <div class="mt-2 mt-lg-auto">
+                                                <a href="index.html" class="custom-link mb-2">
+                                                    About us
+                                                    <i class="bi-arrow-right ms-2"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-product section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <!-- <div class="col-12 text-center">
+                        <h2 class="mb-5">Revolution of Card Games</h2>
+                    </div> -->
+
+                    <!-- <div class="col-lg-4 col-12 atropos my-atropos">
+                        <div class="atropos-scale">
+                            <div class="atropos-rotate">
+                                <div class="atropos-inner">
+                                    <div class="product-thumb">
+                                        <a href="product-detail.html">
+                                            <img src="images/characters/_c024b4d2-6b15-483c-af82-6237388a815b.jpg"
+                                                class="img-fluid product-image" alt="">
+                                        </a>
+
+                                        <div class="product-info d-flex">
+                                            <div>
+                                                <h5 class="product-title mb-0">
+                                                    <a href="product-detail.html" class="product-title-link">A Blend of Champions </a>
+                                                </h5>
+
+                                                <p class="product-p">The Jadetech 3D Card Game takes inspiration from the best! Fans of Pokémon, Digimon, and Yu-Gi-Oh! will find familiar elements woven into a unique and innovative card game experience.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="col-lg-8 col-12 atropos my-atropos">
+                        <div class="atropos-scale">
+                            <div class="atropos-rotate">
+                                <div class="atropos-inner">
+                                    <div class="product-thumb">
+                                        <a href="index.html" class="d-block w-100" style="background-image: url(/images/characters/_0d55d3aa-abe5-4a63-af36-f79204c18709.jpg); background-repeat: no-repeat; background-size: cover; padding-bottom: 60%; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 20px;">
+                                            <span>
+                                                <svg width="847.880029296875px" height="127.84000244140624px" xmlns="http://www.w3.org/2000/svg" viewBox="-173.9400146484375 11.07999877929688 847.880029296875 127.84000244140624" style="background: none;" preserveAspectRatio="xMidYMid"><defs><linearGradient id="editing-sticker-gradient" x1="0.5" y1="0.2" x2="0.5" y2="0.8"><stop offset="0" stop-color="#fd9"></stop><stop offset="1" stop-color="#9df"></stop></linearGradient><filter id="editing-sticker" x="-100%" y="-100%" width="300%" height="300%"><feMorphology operator="erode" radius="1" in="SourceAlpha" result="alpha-erode"></feMorphology><feConvolveMatrix order="3,3" divisor="1" kernelMatrix="0 1 0 1 1 1 0 1 0" in="alpha-erode" result="alpha-round"></feConvolveMatrix><feMorphology operator="dilate" radius="3.5" in="alpha-round" result="dilate-shadow"></feMorphology><feGaussianBlur in="dilate-shadow" stdDeviation="1.5" result="shadow"></feGaussianBlur><feFlood flood-color="#fff" result="flood-sticker"></feFlood><feComposite operator="in" in="flood-sticker" in2="alpha-round" result="comp-sticker"></feComposite><feMorphology operator="dilate" radius="3" in="comp-sticker" result="morph-sticker"></feMorphology><feConvolveMatrix order="3,3" divisor="1" kernelMatrix="0 1 0 1 1 1 0 1 0" in="morph-sticker" result="sticker"></feConvolveMatrix><feMerge><feMergeNode in="shadow"></feMergeNode><feMergeNode in="sticker"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><g filter="url(#editing-sticker)"><g transform="translate(-51.02001142501831, 98.68000030517578)"><path d="M21.25-33.92L21.25-33.92L21.25-33.92Q23.55-33.92 25.34-33.41L25.34-33.41L25.34-33.41Q25.41-33.66 25.54-34.37L25.54-34.37L25.86-36.35L25.86-36.35Q26.11-37.63 26.50-39.74L26.50-39.74L27.52-44.80L40.26-46.08L33.15-8.96L33.15-8.96Q33.09-8.58 33.09-7.94L33.09-7.94L33.09-6.91L33.09-6.91Q33.09-5.50 33.79-4.45L33.79-4.45L33.79-4.45Q34.50-3.39 35.65-3.39L35.65-3.39L35.65-3.39Q34.37-0.38 30.46 0.90L30.46 0.90L30.46 0.90Q29.12 1.28 27.23 1.28L27.23 1.28L27.23 1.28Q25.34 1.28 23.62 0.29L23.62 0.29L23.62 0.29Q21.89-0.70 21.38-2.37L21.38-2.37L21.38-2.37Q20.35-0.70 18.30 0.29L18.30 0.29L18.30 0.29Q16.26 1.28 13.28 1.28L13.28 1.28L13.28 1.28Q10.30 1.28 7.84 0.51L7.84 0.51L7.84 0.51Q5.38-0.26 3.84-1.92L3.84-1.92L3.84-1.92Q1.02-5.18 1.02-12.61L1.02-12.61L1.02-12.61Q1.02-22.21 6.66-28.03L6.66-28.03L6.66-28.03Q12.29-33.92 21.25-33.92ZM20.80-30.08L20.80-30.08L20.80-30.08Q18.43-30.08 17.15-27.52L17.15-27.52L17.15-27.52Q15.87-24.96 14.56-18.62L14.56-18.62L14.56-18.62Q13.25-12.29 13.25-6.59L13.25-6.59L13.25-6.59Q13.25-2.69 15.55-2.69L15.55-2.69L15.55-2.69Q17.60-2.69 19.04-4.74L19.04-4.74L19.04-4.74Q20.48-6.78 21.06-10.18L21.06-10.18L24.51-28.93L24.51-28.93Q23.17-30.08 20.80-30.08ZM55.04 1.28L55.04 1.28L55.04 1.28Q40.96 1.28 40.96-11.97L40.96-11.97L40.96-11.97Q40.96-21.38 46.14-27.46L46.14-27.46L46.14-27.46Q51.65-33.92 61.18-33.92L61.18-33.92L61.18-33.92Q68.10-33.92 71.62-30.72L71.62-30.72L71.62-30.72Q75.14-27.52 75.14-20.80L75.14-20.80L75.14-20.80Q75.14-10.56 69.63-4.61L69.63-4.61L69.63-4.61Q64.26 1.28 55.04 1.28ZM56.70-26.56L56.70-26.56L56.70-26.56Q55.94-24.83 55.33-22.24L55.33-22.24L55.33-22.24Q54.72-19.65 53.95-15.55L53.95-15.55L53.95-15.55Q53.18-11.46 53.18-6.40L53.18-6.40L53.18-6.40Q53.18-4.74 53.73-3.65L53.73-3.65L53.73-3.65Q54.27-2.56 55.74-2.56L55.74-2.56L55.74-2.56Q57.22-2.56 58.14-3.26L58.14-3.26L58.14-3.26Q59.07-3.97 59.78-5.63L59.78-5.63L59.78-5.63Q61.06-8.58 62.08-14.05L62.08-14.05L62.08-14.05Q63.10-19.52 63.20-21.89L63.20-21.89L63.20-21.89Q63.30-24.26 63.30-26.02L63.30-26.02L63.30-26.02Q63.30-27.78 62.78-28.93L62.78-28.93L62.78-28.93Q62.27-30.08 60.83-30.08L60.83-30.08L60.83-30.08Q59.39-30.08 58.43-29.18L58.43-29.18L58.43-29.18Q57.47-28.29 56.70-26.56ZM126.66-10.69L126.66-10.69Q122.43-4.86 118.37-1.79L118.37-1.79L118.37-1.79Q114.30 1.28 110.11 1.28L110.11 1.28L110.11 1.28Q105.92 1.28 104.45 0.45L104.45 0.45L104.45-13.63L104.45-13.63Q100.80-3.90 94.27-0.13L94.27-0.13L94.27-0.13Q91.90 1.28 89.66 1.28L89.66 1.28L89.66 1.28Q85.38 1.28 83.52 0.45L83.52 0.45L83.52 0.45Q83.07-14.21 82.69-18.27L82.69-18.27L82.69-18.27Q82.30-22.34 81.98-24.83L81.98-24.83L81.98-24.83Q81.34-29.82 79.17-31.87L79.17-31.87L79.17-31.87Q81.92-33.92 85.76-33.92L85.76-33.92L85.76-33.92Q93.18-33.92 94.21-24.70L94.21-24.70L94.21-24.70Q94.46-22.53 94.46-20.22L94.46-20.22L94.46-20.22Q94.46-16.77 93.70-4.74L93.70-4.74L93.70-4.74Q95.23-5.44 96.86-7.97L96.86-7.97L96.86-7.97Q98.50-10.50 99.84-13.95L99.84-13.95L99.84-13.95Q102.85-21.95 102.85-28.86L102.85-28.86L102.85-28.86Q102.85-29.95 102.56-31.10L102.56-31.10L102.56-31.10Q102.27-32.26 101.95-32.58L101.95-32.58L101.95-32.58Q104.19-33.92 107.62-33.92L107.62-33.92L107.62-33.92Q111.04-33.92 112.67-31.58L112.67-31.58L112.67-31.58Q114.30-29.25 114.75-24.96L114.75-24.96L114.75-24.96Q115.26-19.52 115.26-16.26L115.26-16.26L115.26-16.26Q115.26-11.71 114.82-4.99L114.82-4.99L114.82-4.99Q118.02-7.30 120.64-14.85L120.64-14.85L120.64-14.85Q123.26-22.40 123.26-27.78L123.26-27.78L123.26-27.78Q123.26-30.14 122.88-31.55L122.88-31.55L122.88-31.55Q124.99-33.92 128.64-33.92L128.64-33.92L128.64-33.92Q130.88-33.92 132.51-32.70L132.51-32.70L132.51-32.70Q134.14-31.49 134.14-29.22L134.14-29.22L134.14-29.22Q134.14-26.94 133.47-24.51L133.47-24.51L133.47-24.51Q132.80-22.08 131.71-19.58L131.71-19.58L131.71-19.58Q129.60-14.59 126.66-10.69L126.66-10.69ZM162.94 1.28L162.94 1.28L162.94 1.28Q155.20 1.28 155.20-4.74L155.20-4.74L155.20-4.74Q155.26-6.40 155.78-9.22L155.78-9.22L156.93-15.10L156.93-15.10Q158.66-23.42 158.66-25.28L158.66-25.28L158.66-25.28Q158.66-28.99 156.48-28.99L156.48-28.99L156.48-28.99Q152.83-28.99 150.91-19.46L150.91-19.46L147.14 0L134.27 1.28L140.93-32.70L151.42-33.92L150.40-27.65L150.40-27.65Q153.41-33.92 162.62-33.92L162.62-33.92L162.62-33.92Q167.10-33.92 168.99-32.03L168.99-32.03L168.99-32.03Q170.88-30.14 170.88-25.92L170.88-25.92L170.88-25.92Q170.88-21.95 168.83-12.67L168.83-12.67L168.83-12.67Q167.87-8.51 167.87-6.94L167.87-6.94L167.87-6.94Q167.87-5.38 168.74-4.48L168.74-4.48L168.74-4.48Q169.60-3.58 170.88-3.46L170.88-3.46L170.88-3.46Q170.24-1.28 168.03 0L168.03 0L168.03 0Q165.82 1.28 162.94 1.28ZM191.30-3.52L191.30-3.52L191.30-3.52Q189.31 1.28 182.98 1.28L182.98 1.28L182.98 1.28Q179.78 1.28 177.73-0.96L177.73-0.96L177.73-0.96Q176.06-2.82 176.06-4.93L176.06-4.93L176.06-4.93Q176.06-9.73 178.30-20.22L178.30-20.22L182.98-44.80L195.97-46.08L189.76-13.70L189.76-13.70Q188.67-8.96 188.67-7.30L188.67-7.30L188.67-7.30Q188.67-3.65 191.30-3.52ZM210.69 1.28L210.69 1.28L210.69 1.28Q196.61 1.28 196.61-11.97L196.61-11.97L196.61-11.97Q196.61-21.38 201.79-27.46L201.79-27.46L201.79-27.46Q207.30-33.92 216.83-33.92L216.83-33.92L216.83-33.92Q223.74-33.92 227.26-30.72L227.26-30.72L227.26-30.72Q230.78-27.52 230.78-20.80L230.78-20.80L230.78-20.80Q230.78-10.56 225.28-4.61L225.28-4.61L225.28-4.61Q219.90 1.28 210.69 1.28ZM212.35-26.56L212.35-26.56L212.35-26.56Q211.58-24.83 210.98-22.24L210.98-22.24L210.98-22.24Q210.37-19.65 209.60-15.55L209.60-15.55L209.60-15.55Q208.83-11.46 208.83-6.40L208.83-6.40L208.83-6.40Q208.83-4.74 209.38-3.65L209.38-3.65L209.38-3.65Q209.92-2.56 211.39-2.56L211.39-2.56L211.39-2.56Q212.86-2.56 213.79-3.26L213.79-3.26L213.79-3.26Q214.72-3.97 215.42-5.63L215.42-5.63L215.42-5.63Q216.70-8.58 217.73-14.05L217.73-14.05L217.73-14.05Q218.75-19.52 218.85-21.89L218.85-21.89L218.85-21.89Q218.94-24.26 218.94-26.02L218.94-26.02L218.94-26.02Q218.94-27.78 218.43-28.93L218.43-28.93L218.43-28.93Q217.92-30.08 216.48-30.08L216.48-30.08L216.48-30.08Q215.04-30.08 214.08-29.18L214.08-29.18L214.08-29.18Q213.12-28.29 212.35-26.56ZM237.34-1.92L237.34-1.92L237.34-1.92Q235.84-3.58 235.17-6.21L235.17-6.21L235.17-6.21Q234.50-8.83 234.50-13.12L234.50-13.12L234.50-13.12Q234.50-17.41 235.97-21.31L235.97-21.31L235.97-21.31Q237.44-25.22 240.13-28.03L240.13-28.03L240.13-28.03Q245.63-33.92 254.72-33.92L254.72-33.92L254.72-33.92Q257.98-33.92 260.35-32.83L260.35-32.83L271.30-33.92L266.56-8.96L266.56-8.96Q266.37-8.19 266.37-6.78L266.37-6.78L266.37-6.78Q266.37-5.38 267.23-4.48L267.23-4.48L267.23-4.48Q268.10-3.58 269.38-3.46L269.38-3.46L269.38-3.46Q268.74-1.28 266.40 0L266.40 0L266.40 0Q264.06 1.28 261.44 1.28L261.44 1.28L261.44 1.28Q258.82 1.28 257.06 0.29L257.06 0.29L257.06 0.29Q255.30-0.70 254.78-2.37L254.78-2.37L254.78-2.37Q253.76-0.77 251.58 0.26L251.58 0.26L251.58 0.26Q249.41 1.28 246.50 1.28L246.50 1.28L246.50 1.28Q243.58 1.28 241.22 0.51L241.22 0.51L241.22 0.51Q238.85-0.26 237.34-1.92ZM250.85-27.90L250.85-27.90L250.85-27.90Q250.11-26.75 249.47-24.80L249.47-24.80L249.47-24.80Q248.83-22.85 247.78-17.63L247.78-17.63L247.78-17.63Q246.72-12.42 246.72-8.70L246.72-8.70L246.72-8.70Q246.72-4.99 247.30-3.90L247.30-3.90L247.30-3.90Q247.87-2.82 248.90-2.82L248.90-2.82L248.90-2.82Q250.94-2.82 252.45-4.77L252.45-4.77L252.45-4.77Q253.95-6.72 254.53-10.18L254.53-10.18L257.92-28.93L257.92-28.93Q256.58-30.08 255.01-30.08L255.01-30.08L255.01-30.08Q253.44-30.08 252.51-29.57L252.51-29.57L252.51-29.57Q251.58-29.06 250.85-27.90ZM294.66-33.92L294.66-33.92L294.66-33.92Q296.96-33.92 298.75-33.41L298.75-33.41L298.75-33.41Q298.82-33.66 298.94-34.37L298.94-34.37L299.26-36.35L299.26-36.35Q299.52-37.63 299.90-39.74L299.90-39.74L300.93-44.80L313.66-46.08L306.56-8.96L306.56-8.96Q306.50-8.58 306.50-7.94L306.50-7.94L306.50-6.91L306.50-6.91Q306.50-5.50 307.20-4.45L307.20-4.45L307.20-4.45Q307.90-3.39 309.06-3.39L309.06-3.39L309.06-3.39Q307.78-0.38 303.87 0.90L303.87 0.90L303.87 0.90Q302.53 1.28 300.64 1.28L300.64 1.28L300.64 1.28Q298.75 1.28 297.02 0.29L297.02 0.29L297.02 0.29Q295.30-0.70 294.78-2.37L294.78-2.37L294.78-2.37Q293.76-0.70 291.71 0.29L291.71 0.29L291.71 0.29Q289.66 1.28 286.69 1.28L286.69 1.28L286.69 1.28Q283.71 1.28 281.25 0.51L281.25 0.51L281.25 0.51Q278.78-0.26 277.25-1.92L277.25-1.92L277.25-1.92Q274.43-5.18 274.43-12.61L274.43-12.61L274.43-12.61Q274.43-22.21 280.06-28.03L280.06-28.03L280.06-28.03Q285.70-33.92 294.66-33.92ZM294.21-30.08L294.21-30.08L294.21-30.08Q291.84-30.08 290.56-27.52L290.56-27.52L290.56-27.52Q289.28-24.96 287.97-18.62L287.97-18.62L287.97-18.62Q286.66-12.29 286.66-6.59L286.66-6.59L286.66-6.59Q286.66-2.69 288.96-2.69L288.96-2.69L288.96-2.69Q291.01-2.69 292.45-4.74L292.45-4.74L292.45-4.74Q293.89-6.78 294.46-10.18L294.46-10.18L297.92-28.93L297.92-28.93Q296.58-30.08 294.21-30.08ZM341.63 1.28L341.63 1.28L341.63 1.28Q327.55 1.28 327.55-11.97L327.55-11.97L327.55-11.97Q327.55-21.38 332.74-27.46L332.74-27.46L332.74-27.46Q338.24-33.92 347.78-33.92L347.78-33.92L347.78-33.92Q354.69-33.92 358.21-30.72L358.21-30.72L358.21-30.72Q361.73-27.52 361.73-20.80L361.73-20.80L361.73-20.80Q361.73-10.56 356.22-4.61L356.22-4.61L356.22-4.61Q350.85 1.28 341.63 1.28ZM343.30-26.56L343.30-26.56L343.30-26.56Q342.53-24.83 341.92-22.24L341.92-22.24L341.92-22.24Q341.31-19.65 340.54-15.55L340.54-15.55L340.54-15.55Q339.78-11.46 339.78-6.40L339.78-6.40L339.78-6.40Q339.78-4.74 340.32-3.65L340.32-3.65L340.32-3.65Q340.86-2.56 342.34-2.56L342.34-2.56L342.34-2.56Q343.81-2.56 344.74-3.26L344.74-3.26L344.74-3.26Q345.66-3.97 346.37-5.63L346.37-5.63L346.37-5.63Q347.65-8.58 348.67-14.05L348.67-14.05L348.67-14.05Q349.70-19.52 349.79-21.89L349.79-21.89L349.79-21.89Q349.89-24.26 349.89-26.02L349.89-26.02L349.89-26.02Q349.89-27.78 349.38-28.93L349.38-28.93L349.38-28.93Q348.86-30.08 347.42-30.08L347.42-30.08L347.42-30.08Q345.98-30.08 345.02-29.18L345.02-29.18L345.02-29.18Q344.06-28.29 343.30-26.56ZM392.58 1.28L392.58 1.28L392.58 1.28Q384.83 1.28 384.83-4.74L384.83-4.74L384.83-4.74Q384.90-6.40 385.41-9.22L385.41-9.22L386.56-15.10L386.56-15.10Q388.29-23.42 388.29-25.28L388.29-25.28L388.29-25.28Q388.29-28.99 386.11-28.99L386.11-28.99L386.11-28.99Q382.46-28.99 380.54-19.46L380.54-19.46L376.77 0L363.90 1.28L370.56-32.70L381.06-33.92L380.03-27.65L380.03-27.65Q383.04-33.92 392.26-33.92L392.26-33.92L392.26-33.92Q396.74-33.92 398.62-32.03L398.62-32.03L398.62-32.03Q400.51-30.14 400.51-25.92L400.51-25.92L400.51-25.92Q400.51-21.95 398.46-12.67L398.46-12.67L398.46-12.67Q397.50-8.51 397.50-6.94L397.50-6.94L397.50-6.94Q397.50-5.38 398.37-4.48L398.37-4.48L398.37-4.48Q399.23-3.58 400.51-3.46L400.51-3.46L400.51-3.46Q399.87-1.28 397.66 0L397.66 0L397.66 0Q395.46 1.28 392.58 1.28ZM437.95-22.46L437.95-22.46L437.95-22.46Q438.85-24.83 438.85-26.88L438.85-26.88L438.85-26.88Q438.85-30.66 435.78-30.66L435.78-30.66L435.78-30.66Q434.18-30.66 432.86-29.22L432.86-29.22L432.86-29.22Q431.55-27.78 431.55-25.98L431.55-25.98L431.55-25.98Q431.55-24.70 432.58-23.68L432.58-23.68L432.58-23.68Q434.05-22.27 437.82-19.97L437.82-19.97L437.82-19.97Q441.60-17.66 443.04-15.78L443.04-15.78L443.04-15.78Q444.48-13.89 444.48-11.30L444.48-11.30L444.48-11.30Q444.48-8.70 443.23-6.34L443.23-6.34L443.23-6.34Q441.98-3.97 439.74-2.30L439.74-2.30L439.74-2.30Q434.94 1.28 427.26 1.28L427.26 1.28L427.26 1.28Q423.10 1.28 419.90-0.90L419.90-0.90L419.90-0.90Q416.70-3.01 416.70-5.50L416.70-5.50L416.70-5.50Q416.70-8 418.53-9.47L418.53-9.47L418.53-9.47Q420.35-10.94 423.04-10.94L423.04-10.94L423.04-10.94Q425.73-10.94 427.39-9.92L427.39-9.92L427.39-9.92Q426.56-7.81 426.56-6.40L426.56-6.40L426.56-6.40Q426.56-2.18 430.14-2.18L430.14-2.18L430.14-2.18Q431.68-2.18 432.70-3.14L432.70-3.14L432.70-3.14Q433.73-4.10 433.73-5.76L433.73-5.76L433.73-5.76Q433.73-9.02 428.22-12.48L428.22-12.48L428.22-12.48Q423.74-15.42 422.72-16.58L422.72-16.58L422.72-16.58Q420.99-18.62 420.99-21.18L420.99-21.18L420.99-21.18Q420.99-23.74 422.21-26.18L422.21-26.18L422.21-26.18Q423.42-28.61 425.66-30.34L425.66-30.34L425.66-30.34Q430.34-33.92 438.46-33.92L438.46-33.92L438.46-33.92Q442.62-33.92 445.09-32.26L445.09-32.26L445.09-32.26Q447.55-30.59 447.55-27.78L447.55-27.78L447.55-27.78Q447.55-24.96 445.86-23.36L445.86-23.36L445.86-23.36Q444.16-21.76 441.09-21.76L441.09-21.76L441.09-21.76Q438.98-21.76 437.95-22.46ZM450.94-6.40L450.94-6.40L450.94-6.40Q450.94-8.13 451.84-12.48L451.84-12.48L455.23-29.76L451.46-29.76L451.71-31.68L451.71-31.68Q459.39-33.98 466.82-39.62L466.82-39.62L469.89-39.62L468.35-32.64L473.34-32.64L472.77-29.76L467.84-29.76L464.58-12.48L464.58-12.48Q463.74-8.51 463.74-7.17L463.74-7.17L463.74-7.17Q463.74-4.10 466.43-3.46L466.43-3.46L466.43-3.46Q465.79-1.28 463.49 0L463.49 0L463.49 0Q461.18 1.28 457.92 1.28L457.92 1.28L457.92 1.28Q454.66 1.28 452.80-0.77L452.80-0.77L452.80-0.77Q450.94-2.82 450.94-6.40ZM498.69-10.82L498.69-10.82L498.69-10.82Q500.29-9.73 500.29-7.33L500.29-7.33L500.29-7.33Q500.29-4.93 499.07-3.39L499.07-3.39L499.07-3.39Q497.86-1.86 495.87-0.83L495.87-0.83L495.87-0.83Q491.78 1.28 487.36 1.28L487.36 1.28L487.36 1.28Q482.94 1.28 480.35 0.32L480.35 0.32L480.35 0.32Q477.76-0.64 476.03-2.43L476.03-2.43L476.03-2.43Q472.64-5.82 472.64-12.03L472.64-12.03L472.64-12.03Q472.64-21.70 477.89-27.58L477.89-27.58L477.89-27.58Q483.52-33.92 493.31-33.92L493.31-33.92L493.31-33.92Q499.39-33.92 502.40-31.36L502.40-31.36L502.40-31.36Q504.64-29.44 504.64-26.30L504.64-26.30L504.64-26.30Q504.64-15.04 485.18-15.04L485.18-15.04L485.18-15.04Q484.93-13.38 484.93-11.97L484.93-11.97L484.93-11.97Q484.93-9.02 486.24-7.90L486.24-7.90L486.24-7.90Q487.55-6.78 489.98-6.78L489.98-6.78L489.98-6.78Q492.42-6.78 495.01-7.90L495.01-7.90L495.01-7.90Q497.60-9.02 498.69-10.82ZM485.63-17.79L485.63-17.79L485.63-17.79Q490.18-17.79 492.80-20.61L492.80-20.61L492.80-20.61Q495.42-23.30 495.42-27.58L495.42-27.58L495.42-27.58Q495.42-29.06 494.88-29.86L494.88-29.86L494.88-29.86Q494.34-30.66 493.25-30.66L493.25-30.66L493.25-30.66Q492.16-30.66 491.23-30.24L491.23-30.24L491.23-30.24Q490.30-29.82 489.34-28.42L489.34-28.42L489.34-28.42Q486.98-25.22 485.63-17.79ZM509.60-1.92L509.60-1.92L509.60-1.92Q508.10-3.58 507.42-6.21L507.42-6.21L507.42-6.21Q506.75-8.83 506.75-13.12L506.75-13.12L506.75-13.12Q506.75-17.41 508.22-21.31L508.22-21.31L508.22-21.31Q509.70-25.22 512.38-28.03L512.38-28.03L512.38-28.03Q517.89-33.92 526.98-33.92L526.98-33.92L526.98-33.92Q530.24-33.92 532.61-32.83L532.61-32.83L543.55-33.92L538.82-8.96L538.82-8.96Q538.62-8.19 538.62-6.78L538.62-6.78L538.62-6.78Q538.62-5.38 539.49-4.48L539.49-4.48L539.49-4.48Q540.35-3.58 541.63-3.46L541.63-3.46L541.63-3.46Q540.99-1.28 538.66 0L538.66 0L538.66 0Q536.32 1.28 533.70 1.28L533.70 1.28L533.70 1.28Q531.07 1.28 529.31 0.29L529.31 0.29L529.31 0.29Q527.55-0.70 527.04-2.37L527.04-2.37L527.04-2.37Q526.02-0.77 523.84 0.26L523.84 0.26L523.84 0.26Q521.66 1.28 518.75 1.28L518.75 1.28L518.75 1.28Q515.84 1.28 513.47 0.51L513.47 0.51L513.47 0.51Q511.10-0.26 509.60-1.92ZM523.10-27.90L523.10-27.90L523.10-27.90Q522.37-26.75 521.73-24.80L521.73-24.80L521.73-24.80Q521.09-22.85 520.03-17.63L520.03-17.63L520.03-17.63Q518.98-12.42 518.98-8.70L518.98-8.70L518.98-8.70Q518.98-4.99 519.55-3.90L519.55-3.90L519.55-3.90Q520.13-2.82 521.15-2.82L521.15-2.82L521.15-2.82Q523.20-2.82 524.70-4.77L524.70-4.77L524.70-4.77Q526.21-6.72 526.78-10.18L526.78-10.18L530.18-28.93L530.18-28.93Q528.83-30.08 527.26-30.08L527.26-30.08L527.26-30.08Q525.70-30.08 524.77-29.57L524.77-29.57L524.77-29.57Q523.84-29.06 523.10-27.90ZM593.09 1.28L593.09 1.28L593.09 1.28Q585.34 1.28 585.34-4.74L585.34-4.74L585.34-4.74Q585.34-7.36 586.46-12.45L586.46-12.45L586.46-12.45Q587.58-17.54 587.97-19.58L587.97-19.58L587.97-19.58Q588.86-24.26 588.86-25.73L588.86-25.73L588.86-25.73Q588.86-28.99 586.43-28.99L586.43-28.99L586.43-28.99Q584.83-28.99 583.30-26.78L583.30-26.78L583.30-26.78Q581.76-24.58 581.06-20.16L581.06-20.16L577.09 0L564.61 1.28L568.06-16.13L568.06-16.13Q568.64-19.01 569.15-22.27L569.15-22.27L569.15-22.27Q569.66-25.54 569.66-26.05L569.66-26.05L569.66-26.05Q569.66-28.99 567.49-28.99L567.49-28.99L567.49-28.99Q566.02-28.99 564.42-26.82L564.42-26.82L564.42-26.82Q562.82-24.64 561.92-20.16L561.92-20.16L558.02 0L545.41 1.28L552.13-32.64L562.56-33.92L561.47-27.46L561.47-27.46Q563.14-30.91 566.21-32.42L566.21-32.42L566.21-32.42Q569.28-33.92 574.08-33.92L574.08-33.92L574.08-33.92Q576.83-33.92 578.62-32.58L578.62-32.58L578.62-32.58Q580.42-31.23 580.99-29.06L580.99-29.06L580.99-29.06Q582.08-31.30 584.86-32.61L584.86-32.61L584.86-32.61Q587.65-33.92 591.07-33.92L591.07-33.92L591.07-33.92Q594.50-33.92 596.19-33.18L596.19-33.18L596.19-33.18Q597.89-32.45 598.91-31.23L598.91-31.23L598.91-31.23Q600.64-28.99 600.64-24.90L600.64-24.90L600.64-24.90Q600.64-20.86 598.91-12.48L598.91-12.48L598.91-12.48Q598.02-8.38 598.02-6.88L598.02-6.88L598.02-6.88Q598.02-5.38 598.88-4.48L598.88-4.48L598.88-4.48Q599.74-3.58 601.02-3.46L601.02-3.46L601.02-3.46Q600.38-1.28 598.18 0L598.18 0L598.18 0Q595.97 1.28 593.09 1.28Z" fill="url(#editing-sticker-gradient)" stroke="#000" stroke-width="2.5"></path></g></g><style>text {
+                                                font-size: 64px;
+                                                font-family: Arial Black;
+                                                dominant-baseline: central;
+                                                text-anchor: middle;
+                                                }</style></svg>
+                                            </span>
+                                        </a>
+
+                                        <!-- <div class="product-top d-flex">
+                                            <span class="product-alert">Low Price</span>
+
+                                            <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
+                                        </div>
+
+                                        <div class="product-info d-flex">
+                                            <div>
+                                                <h5 class="product-title mb-0">
+                                                    <a href="product-detail.html" class="product-title-link">More Than Just a Game</a>
+                                                </h5>
+
+                                                <p class="product-p">The Jadetech 3D Card Game is a constantly evolving world. With regular updates, new cards, events, and challenges, there's always something fresh to discover and keep you engaged.</p>
+                                            </div>
+
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="col-lg-4 col-12 atropos my-atropos">
+                        <div class="atropos-scale">
+                            <div class="atropos-rotate">
+                                <div class="atropos-inner">
+                                    <div class="product-thumb">
+                                        <a href="product-detail.html">
+                                            <img src="images/characters/_e037429a-3bc1-4505-86ec-051a0962c521.jpg"
+                                                class="img-fluid product-image" alt="">
+                                        </a>
+            
+                                        <div class="product-top d-flex">
+                                            <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
+                                        </div>
+            
+                                        <div class="product-info d-flex">
+                                            <div>
+                                                <h5 class="product-title mb-0">
+                                                    <a href="product-detail.html" class="product-title-link">Join the Community</a>
+                                                </h5>
+            
+                                                <p class="product-p">The Jadetech 3D Card Game offers a vibrant community of players. Share strategies, discuss tactics, and forge friendships with fellow card game enthusiasts.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js"></script>
+    <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js"></script>
+    <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
+    <script src="/js/cool-background.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js"></script>
+
+    <script>
+        var cards = document.querySelectorAll('.my-atropos');
+        if (cards && cards.length > 0) {
+            cards.forEach(function(card) {
+                const myAtropos = Atropos({
+                    el: card,
+                    // rest of parameters
+                });
+            });
+        } 
+    </script>
+
+</body>
+
+</html>

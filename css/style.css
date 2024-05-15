@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #111;
+  }
+  
+  /* Position the canvas absolutely within the section */
+#world {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure the canvas appears above the background image */
+    pointer-events: none; /* Make the canvas ignore pointer events so that users can interact with the content behind */
+}
+
+/* Adjust the z-index of the background image to ensure it's behind the canvas */
+.about {
+    position: relative;
+    z-index: 0;
+}
